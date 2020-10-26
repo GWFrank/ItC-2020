@@ -10,7 +10,7 @@
 # ItC Week 4~6 - Sequential Logic
 ###### tags: `Intro_to_Comp`
 
-- Some Eamples
+- Some Examples
   ---
   - Finite State Machine
   - Markov Model
