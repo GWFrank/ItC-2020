@@ -1,18 +1,16 @@
-{%hackmd BJrTq20hE %}
-
-
 <font face="Dejavu Sans"/>
 
-
 # ItC Week 7 - ALU
+
 ###### tags: `Intro_to_Comp`
 
-- Introduction
-  -----
+- ## Introduction
+
   - Digital Building Blocks
     - gates, multiplexer, decoder, register etc.
-- Arithmetic Circuits & Number Systems
-  -----
+
+- ## Arithmetic Circuits & Number Systems
+  
   - 1-bit Half Adder & Full Adder
     - full adder handles carry-ins
   - **Multibit adder**
@@ -74,6 +72,11 @@
   - Counter
     - +1 on each clock edge
   - Shift Register
-- Sequential Building Blocks
-- Memory Arrays
-- Logic Arrays
+
+- ## Sequential Building Blocks
+
+- ## Memory Arrays
+
+- ## Logic Arrays
+
+{%hackmd BJrTq20hE %}

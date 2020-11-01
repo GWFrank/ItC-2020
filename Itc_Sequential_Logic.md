@@ -1,17 +1,11 @@
-{%hackmd BJrTq20hE %}
-
-<!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  -->
-
 <font face="Dejavu Sans"/>
-<!-- <font face = "Roboto"/> -->
-<!-- <font face = "Oswald"/> -->
-
 
 # ItC Week 4~6 - Sequential Logic
+
 ###### tags: `Intro_to_Comp`
 
-- Some Examples
-  ---
+- ## Some Examples
+  
   - Finite State Machine
   - Markov Model
     - Markov model is one kind
@@ -19,41 +13,40 @@
   - RNN & LSTM
   - Sequence to Sequence Model
 
-- Introduction
-  ---
+- ## Introduction
+  
   - Some definitions
-    - state : 
+    - state :
     - latches and flip-flops :
     - synchronous sequential circuits :
 
-
-- Latches and Flip-Flops
-  ---
+- ## Latches and Flip-Flops
+  
   - Bistable Circuit
-      - ![Bistable Circuit](https://i.imgur.com/s7WYj8x.png =x120)
-      - store 1 bit of state
-      - but there are no input to control the state
+    - ![Bistable Circuit](https://i.imgur.com/s7WYj8x.png)
+    - store 1 bit of state
+    - but there are no input to control the state
 
   - SR(Set/Reset) Latch
-    - ![SR Latch](https://cdn.sparkfun.com/assets/learn_tutorials/2/1/6/30-SR-flipflop-circuit.PNG =x120)
+    - ![SR Latch](https://cdn.sparkfun.com/assets/learn_tutorials/2/1/6/30-SR-flipflop-circuit.PNG)
     - must avoid $S=R=1$ (cause invalid case like $Q = \overline Q$)
 
   - D Latch
-    - ![D Latch](https://i.imgur.com/O9XW0ub.png =x120)
+    - ![D Latch](https://i.imgur.com/O9XW0ub.png)
     - essentialy it is just a modified version of SR latch
     - avoids SR latch's problem
 
   - D Flip-flop
-    - ![](https://i.imgur.com/aQyTPjZ.png =x120)
+    - ![D Flip-flop](https://i.imgur.com/aQyTPjZ.png)
     - synchronize with clock at the start of 1
     - only allow $D$ go through when clock go from 0 to 1 (a.k.a."*edge triggered*")
   
   - D Latch v.s. D Flip-flop
-    - ![D Latch vs D Flip-flop](https://i.imgur.com/FjzEHb4.png =x250)
+    - ![D Latch vs D Flip-flop](https://i.imgur.com/FjzEHb4.png)
     - Be careful with latency in circuits!
   
   - Enabled Flip-flop
-    - ![Enabled Flip-flop](https://i.imgur.com/l9kFDFo.png =x120)
+    - ![Enabled Flip-flop](https://i.imgur.com/l9kFDFo.png)
     - A multiplexer + A D Flip-Flop
     - The enable input decide when $D$ should pass through
   
@@ -67,63 +60,34 @@
   - Memory Register
     - Register Implementation
 
+- ## Synchronous Logic Design
   
-    
-  
-- Synchronous Logic Design
-  ---
   - Sequential circuits
     - all circuits that are not combinational
   - System synchronized to the clock
   - Rules
     - each element is either a regster or a combinational circuit
     - contains at least 1 register
-    - all element recieve the same clock(no latency)
+    - all element recieve the same clock(no latency)  
 
+- ## Finite States Machine
   
-
-- Finite States Machine
-  ---
   - Next state determined by input and current state
   - Moore FSM
-    - ![Moore FSM](https://i.imgur.com/4R2mI4P.png =x120)
+    - ![Moore FSM](https://i.imgur.com/4R2mI4P.png)
     - outputs depend on only current state
   - Mealy FSM
-    - ![Mealy FSM](https://i.imgur.com/NCRqVfk.png =x120)
+    - ![Mealy FSM](https://i.imgur.com/NCRqVfk.png)
     - outputs depend on current state ***and*** inputs
   - **Implementation : Traffic Light**
   - **Implementation : Snail**
     - Moore Machine Approach
-    - Mealy Machine Approach 
+    - Mealy Machine Approach
     - Time Diagram : Moore v.s. Mealy
       - When sychronized to the clock, their outputs might not happen at the same time.
       - Because Moore's output happens when entering the state, it will be a bit slower than Mealy's output, which happens when recieve input.
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+{%hackmd BJrTq20hE %}
   
 <!-- <style>
 
@@ -151,7 +115,6 @@ img:hover{
   animation: zoom 1s;
   animation-fill-mode: forwards;
 } */
-
 
 @keyframes rainbow{
 		100%,0%{
