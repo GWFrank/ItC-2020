@@ -39,12 +39,12 @@
     - must avoid $S=R=1$ (cause invalid case like $Q = \overline Q$)
 
   - D Latch
-    - ![D Latch](https://media.geeksforgeeks.org/wp-content/uploads/d_ltch.png =x120)
+    - ![D Latch](https://i.imgur.com/O9XW0ub.png =x120)
     - essentialy it is just a modified version of SR latch
     - avoids SR latch's problem
 
   - D Flip-flop
-    - ![D Flip-Flop](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Negative-edge_triggered_master_slave_D_flip-flop.svg/1200px-Negative-edge_triggered_master_slave_D_flip-flop.svg.png =x120)
+    - ![](https://i.imgur.com/aQyTPjZ.png =x120)
     - synchronize with clock at the start of 1
     - only allow $D$ go through when clock go from 0 to 1 (a.k.a."*edge triggered*")
   
@@ -55,10 +55,14 @@
   - Enabled Flip-flop
     - ![Enabled Flip-flop](https://i.imgur.com/l9kFDFo.png =x120)
     - A multiplexer + A D Flip-Flop
+    - The enable input decide when $D$ should pass through
   
   - Resettable Flip-flop
+    - If $Reset$ is 1, Q is forced to be 0
+    - Else, it behaves like a normal D flip-flop
   
   - Settable Flip-flop
+    - It's like the resettable flip-flop, but is forcing 1
   
   - Memory Register
     - Register Implementation
@@ -121,7 +125,7 @@
   
   
   
-<style>
+<!-- <style>
 
 /* h1 {
     font-family: 'Oswald', sans-serif;
@@ -218,4 +222,4 @@ img:hover{
     transform: scale(2,2)
   }
 }
-</style>
+</style> -->
