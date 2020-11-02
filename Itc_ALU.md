@@ -28,7 +28,7 @@
         1. Compute $G_i$ and $P_i$
         2. Compute $G$ and $P$ for the block
         3. $C_{in}$ of the number propagate through each block
-      - $t_{CLA}=$
+      - $t_{CLA}=t_{pg}+t_{pg\_block}+$
   - Subtracter
     - $Y = A-B =A+B'+1$
   - Comparator (Equality)
@@ -76,6 +76,19 @@
 - ## Sequential Building Blocks
 
 - ## Memory Arrays
+
+  - Memory types
+    - DRAM : Dynamic Random Access Memory
+    - SRAM : Static Random Access Memory
+    - ROM : Read Only Memory
+  - N address bits & M address bits
+    - ![Memory Address](https://i.imgur.com/rl7i161.png)
+  - DRAM vs SRAM
+    - DRAM uses capacitor
+    - SRAM uses cross-coupled inverters
+    - DRAM is computer's memory sticks (8 ~ 16GB)
+    - SRAM is used in CPU's caches (L3 Cache 32 ~ 64MB)
+
 
 - ## Logic Arrays
 
