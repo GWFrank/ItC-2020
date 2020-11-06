@@ -36,7 +36,7 @@
       - have 2 representation for 0
     - 2's complement number
       <!-- - $ A : {}$ -->
-      - $ A = a_{n-1} (-2^{n-1}) + \sum_{i=0}^{n-2} a_i 2^i $
+      - $A = a_{n-1} (-2^{n-1}) + \sum_{i=0}^{n-2} a_i 2^i$
       - starting from the smallest number
       - instead of fliping numbers by 0
       - msb still indicate sign
